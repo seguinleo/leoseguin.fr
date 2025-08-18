@@ -1,0 +1,150 @@
+@font-face {
+	font-family: 'OpenSans';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('/assets/fonts/OpenSans.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('/assets/fonts/OpenSans-700.woff2') format('woff2');
+}
+
+html {
+	background: #13a658;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+* {
+	font-family: 'OpenSans', sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100dvh;
+}
+
+a {
+	font-size: 2rem;
+	text-decoration: none;
+	color: #13a658;
+	display: table;
+	margin: auto;
+}
+
+a:hover {
+	color: #0d7b41;
+}
+
+p {
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+i {
+	color: #f00;
+}
+
+.wrapper {
+	margin: 1rem 0;
+	padding: 30px;
+	width: 600px;
+	max-width: 95vw;
+	background: #ffffff;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 8px 8px 20px rgba(0, 0, 0, .2);
+}
+
+header {
+	font-size: 1.5rem;
+	color: #13a658;
+	padding: 1rem;
+	text-align: right;
+}
+
+h1 {
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 0;
+}
+
+.inputs {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.inputs input {
+	width: 30px;
+	height: 30px;
+	margin: 2px;
+	font-size: 1rem;
+	font-weight: 700;
+	color: #0d7b41;
+	text-align: center;
+	text-transform: uppercase;
+	background: none;
+	border: none;
+	border-bottom: 2px solid #848484;
+}
+
+.inputs input:disabled {
+	opacity: 1;
+}
+
+.reset-btn {
+	width: 100%;
+	border: none;
+	cursor: pointer;
+	color: #ffffff;
+	padding: 15px 0;
+	font-size: 1rem;
+	border-radius: 25px;
+	background: #0d7b41;
+	transition: .2s;
+}
+
+.reset-btn:hover {
+	background: #096f39;
+}
+
+.reset-btn:active {
+	background: #1da15b;
+}
+
+.keyboard {
+	margin: 2rem 10px;
+}
+
+.keyboard button {
+	font-family: monospace;
+	padding: 5px 10px;
+	margin: 5px 3px;
+	font-size: 1rem;
+	font-weight: 700;
+	color: #ffffff;
+	border-radius: 2px;
+	background: #0d7b41;
+	border: none;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.keyboard button:hover {
+	background: #096f39;
+}
+
+.keyboard button:disabled {
+	background: #848484;
+}

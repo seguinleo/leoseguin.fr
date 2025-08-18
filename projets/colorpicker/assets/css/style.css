@@ -1,0 +1,51 @@
+@font-face {
+	font-family: 'OpenSans';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('/assets/fonts/OpenSans.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('/assets/fonts/OpenSans-700.woff2') format('woff2');
+}
+
+* {
+	font-family: 'OpenSans', sans-serif;
+	box-sizing: border-box;
+}
+
+body.light {
+  color: #00000085;
+}
+
+body.dark {
+  color: #ffffff85;
+}
+
+h1 {
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+button {
+  padding: 10px 24px;
+	border-radius: 24px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+body.light button {
+  background-color: #00000085;
+  color: #fff;
+}
+
+body.dark button {
+  background-color: #ffffff85;
+  color: #000;
+}

@@ -1,0 +1,132 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+body {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+.topbar {
+  height: 280px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(#517fa4, #306088);
+}
+
+.page {
+  position: relative;
+  width: 880px;
+  top: 75px;
+  margin: 0 auto;
+}
+
+.home-phones {
+  position: absolute;
+  width: 318px;
+  height: 512px;
+  background: url('../img/home-phones.png') no-repeat;
+}
+
+#iphone-overlay {
+  position: absolute;
+  top: 159px;
+  left: 98px;
+}
+
+#iphone-overlay img {
+  position: absolute;
+  width: 200px;
+  top: -80px;
+  opacity: 0.8;
+  animation: fadeIn 1s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+}
+
+.home-login {
+  padding: 10px;
+  background: linear-gradient(#6f97b6, #306088);
+  color: #fff;
+  font-weight: 700;
+  border: 1px solid #1c5380;
+  display: flex;
+  align-items: end;
+}
+
+.home-login svg {
+  fill: #fff;
+  width: 1.4rem;
+  opacity: 0.8;
+  margin-right: 10px;
+}
+
+.title {
+  float: right;
+  width: 520px;
+  margin-top: 30px;
+}
+
+h1 {
+  color: #06365f;
+  font-size: 1.6em;
+}
+
+a {
+  color: #517fa4;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.content {
+  font-size: 1rem;
+  margin-top: 1rem;
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px 30px;
+  width: 450px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.badge {
+  margin: 14px 8px;
+}
+
+.d-none {
+  display: none;
+}
+
+footer {
+  position: absolute;
+  top: 700px;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: .7rem;
+  font-weight: 700;
+}
+
+footer a {
+  margin: 0 10px;
+}
+
+footer .copyright {
+  color: #999;
+  margin: 0 10px;
+}

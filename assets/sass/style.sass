@@ -1,0 +1,572 @@
+$color1: #d9e7cb
+$color2: #9cd67d
+$color3: #394b2f
+$color4: #213023
+$color5: #151e15
+
+@keyframes slide
+  0%
+    transform: translateX(-300px)
+
+  100%
+    transform: translateX(0)
+
+@keyframes slideUp
+  0%
+    transform: translateY(100px)
+  100%
+    transform: translateY(0)
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+
+  100%
+    opacity: 1
+
+@font-face
+  font-family: OpenSans
+  font-style: normal
+  font-weight: 400
+  font-display: swap
+  src: url('/assets/fonts/OpenSans.woff2') format('woff2')
+
+@font-face
+  font-family: OpenSans
+  font-style: normal
+  font-weight: 700
+  font-display: swap
+  src: url('/assets/fonts/OpenSans-700.woff2') format('woff2')
+
+@font-face
+  font-family: Sometimes Times Regular
+  font-style: normal
+  font-weight: 400
+  font-display: swap
+  src: url('/assets/fonts/Sometimes Times Regular.woff2') format('woff2')
+
+[data-inviewport="slide"]
+  transition: 1s
+  transform: translateX(-100px)
+
+  &.is-inViewport
+    transform: translateX(0)
+
+html
+  font-family: OpenSans, Helvetica Neue, Helvetica, Arial, sans-serif
+  font-size: 1rem
+  scroll-behavior: smooth
+  -webkit-tap-highlight-color: transparent
+
+body
+  margin: 0
+  -webkit-user-select: none
+  user-select: none
+
+  &::-webkit-scrollbar
+    width: 5px
+    height: 5px
+
+input,
+button
+  font-family: OpenSans, Helvetica Neue, Helvetica, Arial, sans-serif
+
+section
+  padding: 4rem
+
+  @media (max-width: 992px)
+    padding: 1rem
+
+h1
+  font-size: 6rem
+  font-family: Sometimes Times Regular
+  animation: slide 1s
+  margin: 1rem 0
+
+  @media (max-width: 992px)
+    font-size: 3.2rem
+
+h2
+  font-size: 1.6rem
+  margin: 1rem 0
+
+h3
+  font-size: 1.2rem
+  margin: 1rem 0
+
+a:hover
+  text-decoration: none
+
+article
+  display: inline-flex
+  flex-direction: column
+  border-radius: 1rem
+  max-width: 520px
+  padding: 1rem
+  margin: 10px
+  text-align: left
+
+  @media (max-width: 992px)
+    max-height: 500px
+    overflow: hidden
+
+  .date
+    margin: 1rem 0
+
+p
+  line-height: 1.7rem
+
+kbd
+  border-radius: 5px
+  margin: 0 2px
+  font-size: .9rem
+  font-weight: 700
+  padding: 2px 4px
+
+  @media (max-width: 992px)
+    display: none
+
+footer
+  max-width: 1300px
+  margin: auto
+  padding: 4rem 1rem
+
+  .col
+    width: 33.3%
+
+    &:last-child
+      margin-bottom: 8rem
+
+  .contact
+    a
+      text-decoration: none
+
+    svg
+      margin: 0 5px
+      width: 24px
+      height: 24px
+
+  .search-input
+    width: fit-content
+    border-radius: 45px
+    padding: 10px
+
+    ::placeholder
+      opacity: 1
+
+    i
+      font-size: 1rem
+      margin: 0 5px
+
+    input
+      font-size: 1rem
+      height: 40px
+      width: 160px
+      border: none
+      border-radius: 24px
+      padding: 0 10px
+      margin-right: 5px
+
+  .search.active
+    .search-box
+      padding: 10px
+
+      li
+        display: flex
+        margin: 0
+
+  .search-box li
+      padding: 10px
+      display: none
+      cursor: pointer
+      width: 260px
+
+#topnav
+  position: fixed
+  z-index: 3
+
+  a
+    display: none
+    align-items: center
+    text-decoration: none
+    margin-bottom: 2rem
+    margin-left: 2rem
+    font-size: 1.2rem
+
+    i
+      margin: 0 5px
+
+#topnav.show
+  height: fit-content
+  max-height: 100%
+  left: 0
+  right: 0
+  bottom: 0
+  border-radius: 20px 20px 0 0
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, .3)
+  animation: slideUp .4s
+
+  a
+    display: flex
+
+  .topnav-bar
+    padding: 5px
+    cursor: pointer
+
+    span
+      display: flex
+      height: 5px
+      width: 2rem
+      border-radius: 5px
+      margin: 1.5rem auto
+
+  #btnTopnav
+    display: none
+
+.container
+  max-width: 1300px
+  margin: auto
+
+.col
+  float: left
+  box-sizing: border-box
+
+  @media (max-width: 992px)
+    min-width: 100%
+
+.button
+  cursor: pointer
+  text-decoration: none
+  padding: 14px 24px
+  border-radius: 36px
+
+  &:hover,
+  &:focus
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2), 0 3px 10px 0 rgba(0, 0, 0, .2)
+
+.hero
+  display: flex
+  justify-content: center
+  height: 100svh
+
+  .title-info
+    font-size: 1.2rem
+    margin-bottom: 2rem
+    font-style: italic
+
+  #main-title
+    display: flex
+    flex-direction: column
+    justify-content: center
+    max-width: 1300px
+
+    @media (max-width: 992px)
+      padding: 0 1rem
+
+.second-title
+  margin: 5rem auto
+
+#portfolio,
+#articles,
+#skills,
+#testimonials
+  display: flex
+  margin: 2rem auto
+  max-width: 1300px
+
+#portfolio
+  .container
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+    div
+      padding: 1.5rem
+
+  i
+    display: flex
+    justify-content: center
+    margin-bottom: 10px
+
+#articles,
+#testimonials,
+.portfolio-section
+  border-radius: 24px
+
+.portfolio-section
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin: 10px
+  flex: 1 1 300px
+  height: 165px
+
+#skills svg
+  margin: 10px
+  line-height: 75px
+
+#testimonials
+  .quote
+    display: inline-flex
+    flex-direction: column
+    margin: 10px
+    padding: 2rem
+    border-radius: 1rem
+    text-align: left
+    background: $color5
+
+    .fa-quote-left
+      font-size: 6rem
+      position: absolute
+      left: 2rem
+      opacity: .2
+
+    span
+      font-style: italic
+
+.tabset
+  .tabs
+    border-radius: 45px
+    display: flex
+    margin-bottom: 24px
+
+    div
+      flex: 1
+      border-radius: 45px
+
+    input
+      display: none
+
+  .tab-panel
+    display: none
+
+  .tab-panel.active
+    display: flex
+    justify-content: center
+    align-items: flex-start
+    flex-wrap: wrap
+    animation: fadeIn .4s
+
+  label
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 72px
+    font-weight: 700
+    border-radius: 45px
+    cursor: pointer
+
+  .frame
+    text-align: left
+    width: 300px
+    margin: 10px
+    border-radius: 1rem
+
+    .projectImage,
+    .projectImagePro
+      overflow: hidden
+      height: 200px
+      border-radius: 1rem
+
+      img
+        width: 300px
+        height: 200px
+
+    .projectImagePro
+      padding: 10px
+      height: 140px
+
+      img
+        width: 280px
+        height: auto
+
+    .projectTitle,
+    .projectInfo
+      margin: 10px
+
+    .projectTitle
+      font-weight: 700
+
+    .projectInfo
+      display: flex
+      align-items: center
+
+      span
+        display: flex
+        align-items: center
+        margin-right: 4px
+        background: #151e15
+        border-radius: 8px
+        padding: 2px 4px
+        font-size: .9rem
+
+        svg
+          margin-right: 4px
+
+      .button
+        width: 100%
+        text-align: center
+        border-radius: 8px
+
+.bold
+  font-weight: 700
+
+.italic
+  font-style: italic
+
+.underline
+  text-decoration: underline
+
+.center
+  text-align: center
+
+.justify
+  text-align: justify
+
+#btnTheme,
+#btnTopnav
+  position: fixed
+  z-index: 2
+  bottom: 2rem
+  font-size: 1.6rem
+  width: 48px
+  height: 48px
+  border-radius: 48px
+  border: none
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+
+  &:hover,
+  &:focus
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2), 0 3px 10px 0 rgba(0, 0, 0, .2)
+
+#btnTheme
+  left: 2rem
+
+#btnTopnav
+  right: 2rem
+
+html.dark
+  background: $color5
+  color: $color1
+  accent-color: $color2
+
+  body
+    &::-webkit-scrollbar-thumb
+      background: $color2
+
+  h1
+    color: $color1
+    text-shadow: 2px 2px 2px $color4
+
+  h2,
+  h3
+    color: $color2
+
+  a
+    color: $color1
+
+  svg
+    fill: $color5
+
+  article
+    background: $color5
+
+  kbd
+    background: $color3
+
+  footer
+    background: $color5
+
+    .contact svg
+      fill: $color1
+
+      &:hover
+        fill: $color2
+
+    .noUnderline:focus
+      path
+        fill: $color2
+
+    .search-input
+      background: $color4
+
+      ::placeholder
+        color: $color1
+
+      input
+        background: $color4
+        color: $color1
+
+        &:focus
+          outline: 2px solid $color2
+
+    .search-box
+      li
+        background: $color4
+
+        &:hover
+          color: $color2
+
+  #topnav
+    .topnav-bar span
+      background: $color1
+
+    a
+      color: $color1
+
+  #topnav.show
+    background: $color4
+
+  .button
+    background: $color5
+    color: $color1
+
+  .hero
+    background: url('/assets/img/bgDark.svg')
+    background-position: center
+    background-size: cover
+
+    @media (min-width: 992px)
+      background-attachment: fixed
+
+    .button
+      display: inline-flex
+      background: $color4
+
+      &:nth-child(2)
+        margin-left: 10px
+
+  #testimonials,
+  #articles,
+  .portfolio-section
+    background: $color4
+
+  #skills svg
+    fill: $color1
+
+    &:hover
+      fill: $color2
+
+  .tabset
+    .tabs
+      background: $color4
+
+      div:hover
+        background: rgba($color3, .3)
+
+      input:checked + div
+        background: $color3
+
+    .frame
+      background: $color4
+      color: $color1
+
+  #btnTheme,
+  #btnTopnav
+    color: $color5
+    background: $color2
