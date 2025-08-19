@@ -44,6 +44,7 @@ inputBox.addEventListener('input', event => {
   suggBox.querySelectorAll('li').forEach(li => {
     li.addEventListener('click', () => {
       const page = li.textContent
+      if (!searchSuggestions.includes(page)) return
       if (page === 'meteo') window.location.href = 'https://meteo-leoseguin.vercel.app/'
       else if (page === 'notida') window.location.href = 'https://notida.fr/'
       else window.location.href = `/projets/${page}/`
