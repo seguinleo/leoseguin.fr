@@ -2,67 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://leoseguin.fr/</loc>
-		<lastmod>2025-08-10</lastmod>
+		<lastmod>2025-09-11</lastmod>
 		<priority>1</priority>
 	</url>
 	<url>
 		<loc>https://leoseguin.fr/projets/</loc>
-		<lastmod>2025-08-10</lastmod>
+		<lastmod>2025-09-11</lastmod>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://leoseguin.fr/mentionslegales/</loc>
-		<lastmod>2025-08-10</lastmod>
+		<lastmod>2025-09-11</lastmod>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://leoseguin.fr/outils/</loc>
-		<lastmod>2025-08-10</lastmod>
+		<lastmod>2025-09-11</lastmod>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://leoseguin.fr/photographie/</loc>
-		<lastmod>2025-08-10</lastmod>
+		<lastmod>2025-09-11</lastmod>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://leoseguin.fr/musique/</loc>
-		<lastmod>2025-08-10</lastmod>
-		<priority>0.8</priority>
-	</url>
-	<url>
-		<loc>https://leoseguin.fr/projets/notes/</loc>
-		<lastmod>2025-08-10</lastmod>
+		<lastmod>2025-09-11</lastmod>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://leoseguin.fr/projets/chronometre/</loc>
-		<lastmod>2025-08-10</lastmod>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://leoseguin.fr/projets/pileouface/</loc>
-		<lastmod>2025-08-10</lastmod>
+		<lastmod>2025-09-11</lastmod>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://leoseguin.fr/projets/pendu/</loc>
-		<lastmod>2025-08-10</lastmod>
+		<lastmod>2025-09-11</lastmod>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://leoseguin.fr/projets/clictest/</loc>
-		<lastmod>2025-08-10</lastmod>
+		<lastmod>2025-09-11</lastmod>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://leoseguin.fr/projets/pileouface/</loc>
+		<lastmod>2025-09-11</lastmod>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://leoseguin.fr/projets/colorpicker/</loc>
-		<lastmod>2025-08-10</lastmod>
+		<lastmod>2025-09-11</lastmod>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://leoseguin.fr/projets/insta/</loc>
-		<lastmod>2025-08-10</lastmod>
+		<lastmod>2025-09-11</lastmod>
 		<priority>0.5</priority>
 	</url>
 </urlset>
