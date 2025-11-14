@@ -1,20 +1,12 @@
-function getRandomKeys(array, num) {
-  const keys = Object.keys(array)
-  const shuffledKeys = keys.sort(() => {
-    return 0.5 - Math.random()
-  })
-  return shuffledKeys.slice(0, num)
-}
-
 const imagePath = 'assets/img/gallery/'
 const imageFiles = [
   '1.jpg',
   '2.jpg'
 ]
-const numImages = 20
-const randomKeys = getRandomKeys(imageFiles, numImages)
 const galleryContainer = document.getElementById('galleryContainer')
-randomKeys.forEach((key) => {
+const imageKeys = Object.keys(imageFiles)
+
+imageKeys.forEach((key) => {
   const imageFile = imageFiles[key]
   const imageName = imageFile.split('.').shift()
 
