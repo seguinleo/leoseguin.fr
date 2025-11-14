@@ -1,10 +1,6 @@
 function getRandomKeys(array, num) {
-  const keys = [...array]
-  for (let i = keys.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
-    [keys[i], keys[j]] = [keys[j], keys[i]]
-  }
-  return keys.slice(0, num)
+  const shuffled = array.sort(() => 0.5 - Math.random())
+  return shuffled.slice(0, num)
 }
 
 const imagePath = 'assets/img/gallery/'
